@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>projeto1-ebix</display-name>
+  
+  <servlet>
+  	<!-- Nome da Servlet -->
+  	<servlet-name>seguradoControllerServlet</servlet-name>
+  	<!-- Especifica a classe que representa a Servlet -->
+  	<servlet-class>br.com.ebix.controller.SeguradoController</servlet-class> 
+  </servlet>
+  
+  <!-- Mapeamento que levará ao servlet -->
+  <servlet-mapping>
+  <servlet-name>seguradoControllerServlet</servlet-name>
+  <url-pattern>/seguradoControllerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Indica que "index.jsp" será a página inicial da aplicação -->
+  <welcome-file-list>
+    <welcome-file>/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
